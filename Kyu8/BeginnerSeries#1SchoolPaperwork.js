@@ -36,3 +36,9 @@ const paperwork = (classmates, paperwork) => {
 
 paperwork(5,5)
 
+
+// this is considered best practice
+
+unction paperwork(classmates, paperwork) {
+  return classmates > 0 && paperwork > 0 ? classmates * paperwork : 0
+}
