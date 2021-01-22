@@ -9,7 +9,6 @@
 // --------------------------
 
 function getCount(str) {
-  let vowelsCount = 0;
   let spreadArr = [...str];
   let vowelsArr = [];
   for (idx = 0; idx <= spreadArr.length; idx++) {
@@ -21,3 +20,9 @@ function getCount(str) {
   return vowelsArr.length - 1;
 }
 getCount("aeiouxxxxxxxx");
+
+
+// ! you can also write a one liner with REGEX and .match() method
+function getCount(str) {
+  return (str.match(/[aeiou]/ig)||[]).length;
+}
